@@ -4,7 +4,7 @@ import {EmployeeService} from './employee.service';
 import {HttpErrorResponse} from '@angular/common/http';
 import {HttpClient} from '@angular/common/http';
 import {NgForm} from '@angular/forms';
-import {environment} from "../environments/environment";
+import {environment} from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +17,7 @@ export class AppComponent implements OnInit {
   public deleteEmployee: Employee;
   public formData: Employee[];
   Positions: {};
+  title: Employee;
 
   constructor(private employeeService: EmployeeService, private http: HttpClient) {
   }
